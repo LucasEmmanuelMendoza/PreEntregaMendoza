@@ -1,0 +1,73 @@
+.redes img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.btn{
+    color: white;
+    border: 0.1rem solid white;
+    background-color: rgb(204, 162, 23);
+}
+
+.card{
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    width: 50rem;
+    height: 25rem;
+}
+
+.card .card-title, .card .card-text{
+    text-align: center;
+}
+
+.card .card-img-top{
+    height: 70%;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3, h4, h5{
+    color: rgba(255, 255, 255, 0.822);
+}
+/*
+main .contenedor{
+    height: 30rem;
+    background-image: url(imgs/banner2Gris.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60%;
+    
+}*/
+
+main .contenedor img{
+    width: 100%;
+}
+.contacto-container{
+    background-image: url(imgs/3D-parts-on-a-table-dark\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15rem;
+    width: 100%;
+}
+
+.divTexto{
+    height: 100%;
+}
+
+main .intro{
+    height: 78vw;
+    background-color: red;
+}
+
+/*==== Página Contacto ===*/
+
+main .form{
+    background-image: url(imgs/3D-parts-on-a-table-dark\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+}
