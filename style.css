@@ -34,6 +34,10 @@ a{
     color: white;
 }
 
+li{
+    list-style: none;
+}
+
 h1, h2, h3, h4, h5{
     color: rgba(255, 255, 255, 0.822);
 }
@@ -67,8 +71,7 @@ main .intro{
     background-color: red;
 }
 
-/*==== Página Contacto ===*/
-
+/* ========================================== Página Contacto =================================== */
 main .form{
     background-image: url(imgs/3D-parts-on-a-table-dark\ \(1\).jpg);
     background-size: cover;
@@ -76,3 +79,30 @@ main .form{
     color: white;
     width: 100%;
 }
+
+
+/* ========================================== Página Productos =================================== */
+
+/*contenedor__grilla
+    contenedor__grilla__aside
+    contenedor__grilla__productos
+*/
+
+.contenedor__grilla__productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor__grilla{/*2 col - 4 filas*/
+    display: grid;
+
+    grid-template-columns: 30% auto;
+    grid-template-rows: repeat(4, 30vh);
+
+    grid-template-areas:
+    "aside contenedor__grilla__productos"
+    "aside contenedor__grilla__productos"
+    "aside contenedor__grilla__productos"
+    "aside contenedor__grilla__productos";
+}
+/*CLASE 6 EJ GRID*/
