@@ -1,3 +1,160 @@
+@charset "UTF-8";
+/*BASE*/
+a {
+  text-decoration: none;
+  color: white;
+}
 
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  color: rgba(255, 255, 255, 0.822);
+}
+
+.btn {
+  color: white;
+  border: 0.1rem solid white;
+  background-color: rgb(204, 162, 23);
+}
+.btn:hover {
+  color: black;
+  background-color: rgb(204, 162, 23);
+}
+
+/*FOOTER*/
+footer .redes__logos__logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: red;
+  font-size: 23rem;
+}
+
+.redes img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/*HEADER*/ /*TARJETA*/
+.tarjeta {
+  box-shadow: 10px 10px 10px rgb(9, 54, 3);
+  width: 25rem;
+  height: 30rem;
+  border-radius: 2rem;
+}
+.tarjeta__cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.tarjeta__titulo {
+  margin-top: 0.7rem;
+}
+.tarjeta__imagen {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.tarjeta-producto {
+  border: 0.1rem solid white;
+  width: 18rem;
+  height: 25rem;
+  border-radius: 1rem;
+}
+.tarjeta-producto__cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.tarjeta-producto__cuerpo__titulo {
+  margin-top: 0.2rem;
+  margin-bottom: -0.3rem;
+}
+.tarjeta-producto__imagen {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-top: 0.7rem;
+}
+
+/* 
+    <div class="tarjeta">
+        <img src="/imgs/homer.jpg" alt="..." class="tarjeta__imagen">
+        <div class="tarjeta__cuerpo">
+            <h3 class="tarjeta__titulo">Título</h3>
+            <p class="tarjeta__texto btn">Ver Más</p>
+        </div>
+    </div>
+          */
+/*CONTACTO*/
+main .contenedor-form {
+  border-radius: 0.5rem;
+}
+main .formulario form {
+  background-image: url(/imgs/3D-parts-on-a-table-dark\ \(1\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+}
+
+/*Index*/
+main .contenedor img {
+  width: 100%;
+}
+
+.contacto-container {
+  background-image: url(/imgs/3D-parts-on-a-table-dark\ \(1\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 100%;
+}
+.contacto-container .divTexto {
+  height: 100%;
+}
+
+/*SECCIÓN PRODUCTOS*/
+main .containerProductos {
+  width: 100%;
+  overflow: hidden;
+}
+main .containerProductos .sliderProductos {
+  width: 100%;
+  display: flex;
+  animation-name: slide;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-direction: alternate;
+}
+main .containerProductos .sliderProductos img {
+  width: 100%;
+  height: 35rem;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-35%);
+  }
+  50% {
+    transform: translateX(-60%);
+  }
+  75% {
+    transform: translateX(-85%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

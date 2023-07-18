@@ -1,0 +1,24 @@
+/*BASE*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5{
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.btn{
+    color: white;
+    border: 0.1rem solid white;
+    background-color: rgb(204, 162, 23);
+
+    &:hover{
+        color: black;
+        background-color: rgb(204, 162, 23);
+    }
+}

@@ -1,14 +1,66 @@
-.card{
-    box-shadow: 10px 10px 20px rgb(0, 0, 0);
-    width: 50rem;
-    height: 25rem;
+/*TARJETA*/
+@mixin tarjetaCuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
 
-    &__text{
-        text-align: center;
+@mixin tarjetaImagen{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.tarjeta {
+    box-shadow: 10px 10px 10px rgb(9, 54, 3);
+    width: 25rem;
+    height: 30rem;
+
+    border-radius: 2rem;
+
+    &__cuerpo{
+        @include tarjetaCuerpo;
     }
 
-    &__image{
-        height: 70%;
-        object-fit: cover;
+    &__titulo{
+        margin-top: .7rem;
+    }
+
+    &__imagen{
+        @include tarjetaImagen;
     }
 }
+
+.tarjeta-producto{
+    border: 0.1rem  solid white;
+    width: 18rem;
+    height: 25rem;
+
+    border-radius: 1rem;
+
+    &__cuerpo{ 
+        @include tarjetaCuerpo;
+            &__titulo{
+                margin-top: .2rem;
+                margin-bottom: -.3rem;
+        }
+    }
+
+    &__imagen{
+        @include tarjetaImagen;
+        margin-top: .7rem;        
+    }
+}
+
+
+/* 
+    <div class="tarjeta">
+        <img src="/imgs/homer.jpg" alt="..." class="tarjeta__imagen">
+        <div class="tarjeta__cuerpo">
+            <h3 class="tarjeta__titulo">Título</h3>
+            <p class="tarjeta__texto btn">Ver Más</p>
+        </div>
+    </div>
+          */

@@ -1,3 +1,4 @@
+/*FOOTER*/
 footer{
     .redes__logos{
         &__logo{
@@ -6,5 +7,12 @@ footer{
             color:red;
             font-size: 23rem;
         }
+    }
+}
+
+.redes{
+    img{
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
