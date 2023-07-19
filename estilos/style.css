@@ -93,15 +93,33 @@ footer .redes__logos__logo {
     </div>
           */
 /*CONTACTO*/
-main .contenedor-form {
+main .contenedor-form-datos {
   border-radius: 0.5rem;
 }
-main .formulario form {
+main .contenedor-formulario form {
   background-image: url(/imgs/3D-parts-on-a-table-dark\ \(1\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  height: 30rem;
   width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  main .contenedor-formulario form {
+    display: grid;
+    /*2 col - 3 filas*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+  }
+  main .contenedor-formulario form .mensaje {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  main .contenedor-formulario form .mensaje .msj {
+    width: 80%;
+    height: 60%;
+  }
 }
 
 /*Index*/
@@ -143,14 +161,17 @@ main .containerProductos .sliderProductos img {
   0% {
     transform: translateX(0%);
   }
-  25% {
-    transform: translateX(-35%);
+  20% {
+    transform: translateX(-20%);
   }
-  50% {
+  40% {
+    transform: translateX(-40%);
+  }
+  60% {
     transform: translateX(-60%);
   }
-  75% {
-    transform: translateX(-85%);
+  80% {
+    transform: translateX(-80%);
   }
   100% {
     transform: translateX(-120%);
