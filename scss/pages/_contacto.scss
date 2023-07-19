@@ -1,14 +1,4 @@
 /*CONTACTO*/
-
-$BP-tablet: 768px;
-$BP-desktop: 1200px;
-
-@mixin tablet{
-    @media (min-width: $BP-tablet){
-        @content;
-    }
-}
-
 main{
     .contenedor-form-datos{
         border-radius: .5rem;
