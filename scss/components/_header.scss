@@ -1,1 +1,21 @@
 /*HEADER*/
+
+header{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.7rem;
+
+    ul{
+        li{
+            a{ 
+                &:hover{
+                    transform: translateY(.2rem);
+                    color: yellow;
+                }
+            }
+        }
+    }
+
+    .logoTitulo{
+            margin-top: .5rem;
+        }
+}

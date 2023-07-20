@@ -1,10 +1,11 @@
-/*FOOTER*/
+/*FOOTER*/ 
+$footerSize: 1.5rem;
+
 footer{
     .redes__logos{
         &__logo{
-            width: 1.5rem;
-            height: 1.5rem;
-            color:red;
+            width: $footerSize;
+            height: $footerSize; 
             font-size: 23rem;
         }
     }
@@ -12,7 +13,7 @@ footer{
 
 .redes{
     img{
-        width: 1.5rem;
-        height: 1.5rem;
+        width: $footerSize;
+        height: $footerSize;
     }
 }

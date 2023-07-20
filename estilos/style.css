@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5 {
 footer .redes__logos__logo {
   width: 1.5rem;
   height: 1.5rem;
-  color: red;
   font-size: 23rem;
 }
 
@@ -36,7 +35,24 @@ footer .redes__logos__logo {
   height: 1.5rem;
 }
 
-/*HEADER*/ /*TARJETA*/
+/*HEADER*/
+header {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.7rem;
+}
+header ul li a:hover {
+  transform: translateY(0.2rem);
+  color: yellow;
+}
+header .logoTitulo {
+  margin-top: 0.5rem;
+}
+
+/*TARJETA*/
+.contenedorTarjeta :hover {
+  transform: translateY(0.2rem);
+}
+
 .tarjeta {
   box-shadow: 10px 10px 10px rgb(9, 54, 3);
   width: 25rem;
@@ -83,15 +99,6 @@ footer .redes__logos__logo {
   margin-top: 0.7rem;
 }
 
-/* 
-    <div class="tarjeta">
-        <img src="/imgs/homer.jpg" alt="..." class="tarjeta__imagen">
-        <div class="tarjeta__cuerpo">
-            <h3 class="tarjeta__titulo">Título</h3>
-            <p class="tarjeta__texto btn">Ver Más</p>
-        </div>
-    </div>
-          */
 /*CONTACTO*/
 main .contenedor-form-datos {
   border-radius: 0.5rem;

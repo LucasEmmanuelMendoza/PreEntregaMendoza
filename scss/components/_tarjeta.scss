@@ -13,7 +13,14 @@
     border-radius: 1rem;
 }
 
-.tarjeta {
+.contenedorTarjeta{
+    :hover{
+        transform: translateY(.2rem);
+    }
+
+}
+
+.tarjeta{
     box-shadow: 10px 10px 10px rgb(9, 54, 3);
     width: 25rem;
     height: 30rem;
@@ -31,6 +38,8 @@
     &__imagen{
         @include tarjetaImagen;
     }
+
+
 }
 
 .tarjeta-producto{
@@ -54,13 +63,4 @@
     }
 }
 
-
-/* 
-    <div class="tarjeta">
-        <img src="/imgs/homer.jpg" alt="..." class="tarjeta__imagen">
-        <div class="tarjeta__cuerpo">
-            <h3 class="tarjeta__titulo">Título</h3>
-            <p class="tarjeta__texto btn">Ver Más</p>
-        </div>
-    </div>
-          */
+ 
