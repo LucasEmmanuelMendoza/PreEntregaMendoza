@@ -43,32 +43,45 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
+    
     <div class="intro">
-      <p>En Olga 3D Impresiones, nos apasiona ampliar los límites de la creatividad y la innovación. 
-      Nuestra misión es capacitar a las personas, artistas, ingenieros y empresas para que hagan realidad 
-      su imaginación más salvaje a través del fascinante mundo de la impresión 3D. Creemos que el futuro 
-      se construye capa por capa y queremos ser su socio en este emocionante viaje.</p>
+      <div class="row">
+        <div class="col-xl-5">
+          <img src="/imgs/aboutpage4.jpg" class="w-100" alt="">
+          <!-- en mediaquery tablet, la imagen ocupa el 75%, así se ve en toda la pantalla. O en 100vh-->
+        </div>
+        
+        <div class="col-xl-7"><p>En Olga 3D Impresiones, nos apasiona ampliar los límites de la creatividad y la innovación. 
+          Nuestra misión es capacitar a las personas, artistas, ingenieros y empresas para que hagan realidad 
+          su imaginación más salvaje a través del fascinante mundo de la impresión 3D.</p>
+          <p>Somos un equipo dedicado de entusiastas de la impresión 3D, fanáticos de la tecnología
+            y mentes creativas que comen, duermen y respiran todo lo relacionado con la impresión 3D. 
+            Nuestra experiencia colectiva abarca varias industrias, desde la aeroespacial hasta la atención médica, 
+            y aportamos esa experiencia para seleccionar la mejor selección de productos de impresión 3D para usted.</p>
+        </div>
+        <!-- HACER UN DISPLAY GRID PARA PONER UN TEXTO AL LADO DEL OTRO. COMO EN EL EJEMPLO 1 DE https://htmlburger.com/blog/about-us-page-examples/ 
+        Agregar un texto en la imagen y acomodar para la vista mobile(van a queda un p abajo del otro)-->
+
+
+
+
+
+      </div>
     </div>
 
     <div class="quienesSomos">
-      <p>Somos un equipo dedicado de entusiastas de la impresión 3D, fanáticos de la tecnología
-      y mentes creativas que comen, duermen y respiran todo lo relacionado con la impresión 3D. 
-      Nuestra experiencia colectiva abarca varias industrias, desde la aeroespacial hasta la atención médica, 
-      y aportamos esa experiencia para seleccionar la mejor selección de productos de impresión 3D para usted.</p>
-    </div> 
+      </div> 
     
     <div class="nuestroEquipamiento border border-black">
 
-      <p></p>
-
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
 
-        <div class="description">Equipadas con una gama de tecnologías de impresión avanzadas, que incluyen modelado por deposición 
+        <div class="description"><p>Equipadas con una gama de tecnologías de impresión avanzadas, que incluyen modelado por deposición 
         fundida (FDM), estereolitografía (SLA), sinterización selectiva por láser (SLS) y más, estas impresoras se adaptan
         a un amplio espectro de aplicaciones. Desde la elaboración de complejos prototipos hasta la producción de piezas funcionales
-        y obras maestras artísticas, existe una solución de impresión 3D perfecta para cada necesidad.</div>
-
+        y obras maestras artísticas, existe una solución de impresión 3D perfecta para cada necesidad.
+        </p></div>
 
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -106,16 +119,15 @@
       </div>
     </div>
 
-    <div class="border border-black">
+    <div class="comunidad mt-3">
       <h2>Únase a la comunidad Olga 3D:</h2>
       <p>Lo invitamos a unirse a nuestros prósperos foros en línea, donde los entusiastas de la impresión 3D comparten
-         sus proyectos, ofrecen consejos y celebran sus éxitos.</p>
+      sus proyectos, ofrecen consejos y celebran sus éxitos.</p>
 
-        <div>
-          <input type="text" placeholder="Ingrese su correo electrónico">
-          <button class="btn"> Enviar</button>
-        </div>
-
+      <form>
+        <input type="text" placeholder="Ingrese su correo electrónico">
+        <button class="btn"> Enviar</button>
+      </form>
     </div>
   
     </main>

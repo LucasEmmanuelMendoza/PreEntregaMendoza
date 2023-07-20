@@ -99,6 +99,67 @@ header .logoTitulo {
   margin-top: 0.7rem;
 }
 
+/* ======= SECCIÓN CONOCENOS ======= */
+.quienesSomos {
+  height: 40rem;
+  background-image: url(/imgs/aboutPage.jpg);
+  margin: 1rem;
+}
+
+.comunidad {
+  border-radius: 1rem;
+  height: 20rem;
+  margin: 1rem;
+  background-image: url(/imgs/aboutPage3.jpg);
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.comunidad h2 {
+  color: rgb(7, 6, 6);
+  animation-name: animacion;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+.comunidad p {
+  font-size: large;
+  font-weight: 600;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+@media (min-width: 768px) {
+  .comunidad p {
+    font-family: sans-serif;
+    color: rgb(246, 246, 246);
+    font-size: large;
+    font-style: oblique;
+    text-transform: uppercase;
+  }
+}
+.comunidad form {
+  margin-top: -2rem;
+}
+
+@keyframes animacion {
+  0% {
+    background-color: skyblue;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: gold;
+  }
+  75% {
+    background-color: greenyellow;
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
 /*CONTACTO*/
 main .contenedor-form-datos {
   border-radius: 0.5rem;
