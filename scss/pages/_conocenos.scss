@@ -1,18 +1,86 @@
 /* ======= SECCIÓN CONOCENOS ======= */
-.quienesSomos{
-    height: 40rem;
-    background-image: url(/imgs/aboutPage.jpg);
-    margin: 1rem
+.intro{
+    .img-intro{
+        height: 100vh;
+        background-image: url(/imgs/aboutPage4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1{ 
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 40%;
+        text-align: center; 
+        background-color: black;
+    }
+    
+    .sobreNosotros{
+        @include tablet{ 
+            margin-top: 5%;
+
+        }
+
+        h2{
+            font-size: 4rem; 
+            overflow-wrap: break-word;
+        }
+
+        &__texto1, &__texto2{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:larger; 
+            font-weight: 700;
+        }
+    }
+
 }
 
-    // .nuestroEquipamiento{
+.quienesSomos{
+    overflow-wrap: break-word;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 
-    // }
+    &__texto{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:larger; 
+        font-weight: 700;
+
+        .titulo{ 
+            color: rgb(246, 246, 246); 
+            font-size: 3rem; 
+            overflow-wrap: break-word;
+            font-weight:300;
+        }
+    }
+}
+
+.nuestroEquipamiento{
+
+    h2{
+        font-size: 3rem; 
+        overflow-wrap: break-word;
+    }
+
+    .description{
+        p{
+            font-family:Arial, Helvetica, sans-serif; 
+            font-size:larger; 
+            font-weight: 800;
+            
+            .titulo{ 
+                color: rgb(246, 246, 246); 
+                font-size: 3rem; 
+                overflow-wrap: break-word;
+                font-weight:300;
+            }
+        }
+    }
+
+}
 
 .comunidad{
     border-radius: 1rem;
     height: 20rem;
-    margin: 1rem;
+    margin: 1.5rem;
     background-image: url(/imgs/aboutPage3.jpg);
     background-position: center;
     color:white;

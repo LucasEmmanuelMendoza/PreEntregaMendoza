@@ -100,16 +100,70 @@ header .logoTitulo {
 }
 
 /* ======= SECCIÓN CONOCENOS ======= */
+.intro .img-intro {
+  height: 100vh;
+  background-image: url(/imgs/aboutPage4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro h1 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 40%;
+  text-align: center;
+  background-color: black;
+}
+@media (min-width: 768px) {
+  .intro .sobreNosotros {
+    margin-top: 5%;
+  }
+}
+.intro .sobreNosotros h2 {
+  font-size: 4rem;
+  overflow-wrap: break-word;
+}
+.intro .sobreNosotros__texto1, .intro .sobreNosotros__texto2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: 700;
+}
+
 .quienesSomos {
-  height: 40rem;
-  background-image: url(/imgs/aboutPage.jpg);
-  margin: 1rem;
+  overflow-wrap: break-word;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.quienesSomos__texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: 700;
+}
+.quienesSomos__texto .titulo {
+  color: rgb(246, 246, 246);
+  font-size: 3rem;
+  overflow-wrap: break-word;
+  font-weight: 300;
+}
+
+.nuestroEquipamiento h2 {
+  font-size: 3rem;
+  overflow-wrap: break-word;
+}
+.nuestroEquipamiento .description p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: 800;
+}
+.nuestroEquipamiento .description p .titulo {
+  color: rgb(246, 246, 246);
+  font-size: 3rem;
+  overflow-wrap: break-word;
+  font-weight: 300;
 }
 
 .comunidad {
   border-radius: 1rem;
   height: 20rem;
-  margin: 1rem;
+  margin: 1.5rem;
   background-image: url(/imgs/aboutPage3.jpg);
   background-position: center;
   color: white;
