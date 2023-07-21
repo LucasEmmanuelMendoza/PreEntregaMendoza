@@ -100,28 +100,28 @@ header .logoTitulo {
 }
 
 /* ======= SECCIÓN CONOCENOS ======= */
-.intro .img-intro {
+main .intro .img-intro {
   height: 100vh;
   background-image: url(/imgs/aboutPage4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.intro h1 {
+main .intro h1 {
   font-family: "Courier New", Courier, monospace;
   margin-top: 40%;
   text-align: center;
   background-color: black;
 }
 @media (min-width: 768px) {
-  .intro .sobreNosotros {
+  main .intro .sobreNosotros {
     margin-top: 5%;
   }
 }
-.intro .sobreNosotros h2 {
+main .intro .sobreNosotros h2 {
   font-size: 4rem;
   overflow-wrap: break-word;
 }
-.intro .sobreNosotros__texto1, .intro .sobreNosotros__texto2 {
+main .intro .sobreNosotros__texto1, main .intro .sobreNosotros__texto2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
   font-weight: 700;
@@ -247,6 +247,22 @@ main .contenedor-formulario form {
 /*Index*/
 main .contenedor img {
   width: 100%;
+}
+main .introImg {
+  overflow-wrap: break-word;
+  display: flex;
+  font-family: "Bebas Neue", sans-serif;
+  background-image: url(/imgs/banner2Gris.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+main .introImg h1 {
+  color: white;
+  font-size: 4rem;
+  margin-top: 20%;
+  margin-left: 30%;
 }
 
 .contacto-container {

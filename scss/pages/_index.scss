@@ -6,6 +6,26 @@ main{
             width: 100%;
         }
     }
+
+    .introImg{
+        overflow-wrap: break-word;
+        display: flex;
+
+        font-family: 'Bebas Neue', sans-serif;
+
+        background-image: url(/imgs/banner2Gris.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        
+        h1{ 
+            color: white;
+            font-size: 4rem;
+            margin-top: 20%;
+            margin-left: 30%;
+        }
+    }
 }
 
 .contacto-container{
@@ -19,3 +39,4 @@ main{
         height: 100%;
     }
 }
+

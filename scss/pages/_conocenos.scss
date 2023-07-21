@@ -1,37 +1,39 @@
 /* ======= SECCIÓN CONOCENOS ======= */
-.intro{
-    .img-intro{
-        height: 100vh;
-        background-image: url(/imgs/aboutPage4.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    h1{ 
-        font-family: 'Courier New', Courier, monospace;
-        margin-top: 40%;
-        text-align: center; 
-        background-color: black;
-    }
+main{
+    .intro{
+        .img-intro{
+            height: 100vh;
+            background-image: url(/imgs/aboutPage4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     
-    .sobreNosotros{
-        @include tablet{ 
-            margin-top: 5%;
-
+        h1{ 
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 40%;
+            text-align: center; 
+            background-color: black;
         }
-
-        h2{
-            font-size: 4rem; 
-            overflow-wrap: break-word;
+        
+        .sobreNosotros{
+            @include tablet{ 
+                margin-top: 5%;
+    
+            }
+    
+            h2{
+                font-size: 4rem; 
+                overflow-wrap: break-word;
+            }
+    
+            &__texto1, &__texto2{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:larger; 
+                font-weight: 700;
+            }
         }
-
-        &__texto1, &__texto2{
-            font-family:Arial, Helvetica, sans-serif;
-            font-size:larger; 
-            font-weight: 700;
-        }
+    
     }
-
 }
 
 .quienesSomos{
