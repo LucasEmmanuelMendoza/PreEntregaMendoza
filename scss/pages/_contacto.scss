@@ -28,10 +28,15 @@ main{
                         height: 60%;
                     }
                 }
-
-
-
             }
+        }
+    }
+
+    .datos{
+        span{
+            color: $C-colorTitulo; 
+            font-size: large;
+            font-weight: 500;
         }
     }
 }

@@ -19,7 +19,36 @@
             }
         }
     }
+
+    .container{
+        .categorias{  
+            margin-right: 1.3rem;
+
+            h1{
+                animation-name: BG-animacion;
+                animation-duration: 1s;
+                animation-iteration-count: infinite; 
+                animation-direction: alternate; 
+            }
+
+            li{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: larger;
+                margin: .5rem;
+
+                :hover{
+                    border-bottom: white solid .1rem;
+                }
+            }
+        }
+    }
  }
+
+@keyframes BG-animacion{
+    100%{
+        background-color: $C-colorTitulo;
+    }
+}
 
 @keyframes slide{ 
     0%{

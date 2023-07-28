@@ -1,4 +1,9 @@
 /*BASE*/
+$BG-color-btn:rgb(204, 162, 23);
+$BP-tablet: 768px;
+$BP-desktop: 1200px;
+$C-colorTitulo: rgba(255, 255, 255, 0.822);
+
 a{
     text-decoration: none;
     color: white;
@@ -9,22 +14,19 @@ li{
 }
 
 h1,h2,h3,h4,h5{
-    color: rgba(255, 255, 255, 0.822);
+    color: $C-colorTitulo;
 }
 
 .btn{
     color: white;
     border: 0.1rem solid white;
-    background-color: rgb(204, 162, 23);
+    background-color: $BG-color-btn;
 
     &:hover{
         color: black;
-        background-color: rgb(204, 162, 23);
+        background-color: $BG-color-btn;
     }
 }
-
-$BP-tablet: 768px;
-$BP-desktop: 1200px;
 
 @mixin tablet{
     @media (min-width: $BP-tablet){
