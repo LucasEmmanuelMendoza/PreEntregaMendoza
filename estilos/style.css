@@ -137,6 +137,9 @@ main .intro .sobreNosotros__texto1, main .intro .sobreNosotros__texto2 {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+.quienesSomos__img {
+  object-fit: cover;
+}
 .quienesSomos__texto {
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;

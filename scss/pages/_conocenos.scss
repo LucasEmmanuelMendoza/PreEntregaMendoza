@@ -45,6 +45,10 @@ main{
     margin-bottom: 2rem;
     margin-top: 2rem;
 
+    &__img{
+        object-fit: cover;
+    }
+
     &__texto{
         @include ff-texto();
         font-weight: 700;
