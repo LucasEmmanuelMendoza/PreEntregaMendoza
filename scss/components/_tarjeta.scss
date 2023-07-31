@@ -22,6 +22,11 @@
 .tarjeta{
     box-shadow: 10px 10px 10px rgb(9, 54, 3);
     width: 25rem;
+    
+    @media (max-width: 768px){
+        width: 100%;
+    }
+
     height: 30rem;
 
     border-radius: 2rem;
@@ -37,8 +42,6 @@
     &__imagen{
         @include tarjetaImagen;
     }
-
-
 }
 
 .tarjeta-producto{

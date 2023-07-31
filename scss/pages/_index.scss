@@ -1,4 +1,8 @@
 /*Index*/
+@mixin BG-COVER{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 main{
     .contenedor{
@@ -8,30 +12,36 @@ main{
     }
 
     .introImg{
+        width: 100%;
+        height: 100vh;
+
+        margin-right: 0px;
+        
         overflow-wrap: break-word;
         display: flex;
 
         font-family: 'Bebas Neue', sans-serif;
 
         background-image: url(/imgs/banner2Gris.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100%;
+        @include BG-COVER();
         
-        h1{ 
-            color: white;
+        h1{
+            text-shadow: 0 0 10px rgb(0, 255, 55),0 0 10px rgb(0, 255, 55), 0 0 10px rgb(0, 255, 55), 0 0 10px rgb(0, 255, 55);
+            color: rgb(17, 15, 15);
             font-size: 4rem;
-            margin-top: 20%;
-            margin-left: 30%;
+            margin-top: 20rem;
+            margin-left: 25%;
+
+            @media (max-width: $BP-tablet){
+                margin-top: 15rem;
+            }
         }
     }
 }
 
 .contacto-container{
     background-image: url(/imgs/3D-parts-on-a-table-dark\ \(1\).jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include BG-COVER();
     height: 15rem;
     width: 100%;
 
