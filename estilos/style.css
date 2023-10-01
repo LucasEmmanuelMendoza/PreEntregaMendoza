@@ -68,7 +68,6 @@ header .logoTitulo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 .tarjeta__titulo {
   margin-top: 0.7rem;
@@ -90,7 +89,6 @@ header .logoTitulo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 .tarjeta-producto__cuerpo__titulo {
   margin-top: 0.2rem;
@@ -102,6 +100,11 @@ header .logoTitulo {
   object-fit: cover;
   border-radius: 1rem;
   margin-top: 0.7rem;
+}
+.tarjeta-producto__precio {
+  margin: 0.4rem;
+  font-size: large;
+  font-weight: 500;
 }
 
 /* ======= SECCIÓN CONOCENOS ======= */
@@ -370,6 +373,12 @@ main .container .categorias li :hover {
   100% {
     transform: translateX(-120%);
   }
+}
+
+/*--------------*/
+.imgEliminar{
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

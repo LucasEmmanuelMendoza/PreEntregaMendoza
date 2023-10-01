@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 
 @mixin tarjetaImagen{
@@ -62,6 +61,12 @@
     &__imagen{
         @include tarjetaImagen;
         margin-top: .7rem;        
+    }
+    
+    &__precio{
+        margin: .4rem;
+        font-size: large;
+        font-weight: 500;
     }
 }
 
