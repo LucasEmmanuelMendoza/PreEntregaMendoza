@@ -65,56 +65,59 @@ function agregarAlCarrito(producto){
 
 function renderizarProductos(listaProductos){
   //console.log(listaProductos);
-  let cantidadActual = 0;
-  for(const prod of listaProductos){
-    if(seccionProductos != null){
-      seccionProductos.innerHTML += `
-      <div class="tarjeta-producto">
-      <img src="${prod.foto}" alt="${prod.nombre}" class="tarjeta-producto__imagen" alt="imagen de homero buda impreso en 3D">
-        <div class="tarjeta-producto__cuerpo">
-          <h5 class="tarjeta-producto__cuerpo__titulo">${prod.nombre}</h5>
-          <p class="tarjeta-producto__precio">$ ${prod.precio}</p>
-          <button id=${prod.id} class="btn btn1">Agregar al carro</button>
+  if(listaProductos != null){
+    let cantidadActual = 0;
+    for(const prod of listaProductos){
+      if(seccionProductos != null){
+        seccionProductos.innerHTML += `
+        <div class="tarjeta-producto">
+        <img src="${prod.foto}" alt="${prod.nombre}" class="tarjeta-producto__imagen" alt="imagen de homero buda impreso en 3D">
+          <div class="tarjeta-producto__cuerpo">
+            <h5 class="tarjeta-producto__cuerpo__titulo">${prod.nombre}</h5>
+            <p class="tarjeta-producto__precio">$ ${prod.precio}</p>
+            <button id=${prod.id} class="btn btn1">Agregar al carro</button>
+          </div>
         </div>
-      </div>
-      `
+        `
+      }
     }
-  }
-
-  //Botones:
-  let botones = document.getElementsByClassName('btn1');
-  for(const boton of botones){
-    boton.addEventListener('click', () =>{ 
-      if(localStorage.getItem('ingresoActivo') == 'comprador'){
-        const prodACarro = listaProductos.find((producto) => producto.id == boton.id);
-
-        let prodsStorage = JSON.parse(localStorage.getItem('productos'));
-
-        for(const elem of prodsStorage){
-          if(elem.id == prodACarro.id){
-            cantidadActual = elem.cantidad;
-            break;
+  
+    //Botones:
+    let botones = document.getElementsByClassName('btn1');
+    for(const boton of botones){
+      boton.addEventListener('click', () =>{ 
+        if(localStorage.getItem('ingresoActivo') == 'comprador'){
+          const prodACarro = listaProductos.find((producto) => producto.id == boton.id);
+  
+          let prodsStorage = JSON.parse(localStorage.getItem('productos'));
+  
+          for(const elem of prodsStorage){
+            if(elem.id == prodACarro.id){
+              cantidadActual = elem.cantidad;
+              break;
+            }
           }
-        }
-
-        if(parseInt(cantidadActual) > 0){
-          agregarAlCarrito(prodACarro);
+  
+          if(parseInt(cantidadActual) > 0){
+            agregarAlCarrito(prodACarro);
+          }else{
+            Swal.fire({
+              icon: 'error',
+              title: 'No hay stock disponible para este producto',
+            })
+          }
+  
         }else{
           Swal.fire({
             icon: 'error',
-            title: 'No hay stock disponible para este producto',
+            title: 'Ningún usuario encontrado',
+            text: 'Inicie sesión para agregar al carro',
           })
         }
-
-      }else{
-        Swal.fire({
-          icon: 'error',
-          title: 'Ningún usuario encontrado',
-          text: 'Inicie sesión para agregar al carro',
-        })
-      }
-    })
+      })
+    }
   }
+
 }
  
 renderizarProductos(JSON.parse(localStorage.getItem('productos')));
