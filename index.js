@@ -63,11 +63,11 @@ function agregarAlCarrito(producto){
   }
 }
 
-function renderizarProductos(listaProductos){
+function renderizarProductos(productos){
   //console.log(listaProductos);
-  if(listaProductos != null){
+  if(productos != null){
     let cantidadActual = 0;
-    for(const prod of listaProductos){
+    for(const prod of productos){
       if(seccionProductos != null){
         seccionProductos.innerHTML += `
         <div class="tarjeta-producto">
@@ -87,7 +87,7 @@ function renderizarProductos(listaProductos){
     for(const boton of botones){
       boton.addEventListener('click', () =>{ 
         if(localStorage.getItem('ingresoActivo') == 'comprador'){
-          const prodACarro = listaProductos.find((producto) => producto.id == boton.id);
+          const prodACarro = productos.find((producto) => producto.id == boton.id);
   
           let prodsStorage = JSON.parse(localStorage.getItem('productos'));
   
